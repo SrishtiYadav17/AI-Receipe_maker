@@ -1,0 +1,14 @@
+{% extends "meal_planner/base.html" %}
+
+{% block title %}Meal Plan{% endblock %}
+
+{% block content %}
+<h2>Your Meal Plan</h2>
+<ul class="list-group">
+    {% for meal in meal_plan %}
+    <li class="list-group-item">{{ meal }}</li>
+    {% empty %}
+    <li class="list-group-item">No meal plan available.</li>
+    {% endfor %}
+</ul>
+{% endblock %}

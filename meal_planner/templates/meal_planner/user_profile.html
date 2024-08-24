@@ -1,0 +1,12 @@
+{% extends "meal_planner/base.html" %}
+
+{% block title %}Add Recipe{% endblock %}
+
+{% block content %}
+<h2>Add Recipe</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-primary">Add Recipe</button>
+</form>
+{% endblock %}

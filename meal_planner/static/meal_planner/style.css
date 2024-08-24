@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light blue */
+}
+
+.navbar {
+    background-color: #ffebf0; /* Light pink */
+}
+
+h1 {
+    color: #333;
+}
+
+.list-group-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
